@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.original__movies {
+  overflow-x: scroll;
+  white-space: nowrap;
+  --webkit-scrollbar: none;
+}
+
+img {
+  width: 100px;
+}
+
+.featured {
+  height: 400px;
+  position: relative;
+  background-image: url("https://image.tmdb.org/t/p/original//3lBDg3i6nn5R2NKFCJ6oKyUo2j5.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured h2 {
+  font-size: 50px;
+  margin: 0;
+  z-index: 10;
+}
+
+.featured .featured__buttons {
+  z-index: 10;
+}
+
+.featured .featured__buttons button {
+  font-size: 16px;
+  color: white;
+  background-color: rgba(109, 109, 110, 0.7);
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.featured::after {
+  position: absolute;
+  content: "";
+  height: 7.4rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+.featured .featured__buttons .button__play {
+  background-color: white;
+  color: black;
+}
+
+.button__play i {
+  margin-right: 6px;
+}
+
+.featured .featured__description {
+  max-width: 350px;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+}
+.logo > img {
+  width: 120px;
+}
+
+.profile > img {
+  width: 40px;
+}
+.original__movies {
+  padding-left: 50px;
+}
+.netflixOriginals h2,
+.movies__header h2 {
+  padding-left: 30px;
+}
+.movies__header h2 {
+  padding-left: 30px;
+}
+.original__movies img {
+  padding-right: 10px;
+  height: 250px;
+  /* object-fit: contain; */
+  width: auto;
+}
+.original__movies,
+.movies__container {
+  padding-left: 50px;
+}
+.movies__container img {
+  width: 165px;
+  margin-right: 10px;
+}
+.original__header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.movies__header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
