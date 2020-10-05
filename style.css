@@ -8,10 +8,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.original__movies {
+.original__movies,
+.movies__container {
   overflow-x: scroll;
   white-space: nowrap;
-  --webkit-scrollbar: none;
 }
 
 img {
