@@ -14,6 +14,11 @@ body {
   white-space: nowrap;
 }
 
+.original__movies {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 img {
   width: 100px;
 }
@@ -143,4 +148,13 @@ header {
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
+}
+.original__movies img,
+.movies__container img {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.original__movies img:hover,
+.movies__container img:hover {
+  transform: scale(1.1);
 }
